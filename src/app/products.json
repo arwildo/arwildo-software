@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Produk A",
+    "description": "Deskripsi untuk Produk A.",
+    "price": 100,
+    "image": "/images/produk-a.png"
+  },
+  {
+    "id": 2,
+    "title": "Produk B",
+    "description": "Deskripsi untuk Produk B.",
+    "price": 150,
+    "image": "/images/produk-b.png"
+  },
+  {
+    "id": 3,
+    "title": "Produk C",
+    "description": "Deskripsi untuk Produk C.",
+    "price": 200,
+    "image": "/images/produk-c.png"
+  },
+  {
+    "id": 4,
+    "title": "Produk D",
+    "description": "Deskripsi untuk Produk D.",
+    "price": 250,
+    "image": "/images/produk-d.png"
+  }
+]
