@@ -22,6 +22,8 @@ const config = {
         sans: ["var(--font-sans)"],
       },
       colors: {
+        madewhite: "#FEFBF9",
+        carcoal: "37313C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
