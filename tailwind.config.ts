@@ -19,11 +19,11 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)"],
+        sans: ["Avenir", "var(--font-sans)"],
       },
       colors: {
         madewhite: "#FEFBF9",
-        carcoal: "37313C",
+        carcoal: "#37313C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

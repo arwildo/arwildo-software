@@ -21,7 +21,7 @@ export default function LandingPage() {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col md:flex-row items-center max-w-3xl mx-auto mb-8">
-            <div className="md:w-1/2 text-center md:text-left">
+            <div className="md:w-1/2 text-center md:text-left flex flex-col items-center">
               <motion.h1 
                 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 text-carcoal" 
                 initial={{ opacity: 0, y: 20 }}
@@ -36,7 +36,7 @@ export default function LandingPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
               >
-                Software 
+                SOFTWARE 
               </motion.p>
             </div>
             
