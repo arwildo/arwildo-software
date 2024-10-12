@@ -19,7 +19,7 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["Avenir", "var(--font-sans)"],
+        avenir: ['"Avenir LT Std"', 'sans-serif'],
       },
       colors: {
         madewhite: "#FEFBF9",

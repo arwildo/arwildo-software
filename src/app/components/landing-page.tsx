@@ -16,14 +16,14 @@ export default function LandingPage() {
   }
 
   return (
-    <div className="bg-madewhite">
+    <div className="bg-madewhite font-avenir">
       <section className="relative overflow-hidden py-16 min-h-screen flex items-center">
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="flex flex-col md:flex-row items-center max-w-3xl mx-auto mb-8">
             <div className="md:w-1/2 text-center md:text-left flex flex-col items-center">
               <motion.h1 
-                className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 text-carcoal" 
+                className="text-7xl lg:text-8xl font-black text-carcoal" 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -31,7 +31,7 @@ export default function LandingPage() {
                 Arwildo
               </motion.h1>
               <motion.p 
-                className="text-xl text-gray-600 mb-4"
+                className="text-md text-gray-600 font-normal tracking-widest"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
@@ -39,7 +39,6 @@ export default function LandingPage() {
                 SOFTWARE 
               </motion.p>
             </div>
-            
             <motion.div 
               className="md:w-1/2"
               initial={{ opacity: 0, y: 20 }}

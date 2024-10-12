@@ -67,3 +67,45 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('/fonts/Avenir LT Std 35 Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('/fonts/Avenir LT Std 45 Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('/fonts/Avenir LT Std 55 Roman.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('/fonts/Avenir LT Std 65 Medium.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('/fonts/Avenir LT Std 85 Heavy.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir LT Std';
+  src: url('/fonts/Avenir LT Std 95 Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
