@@ -2,10 +2,10 @@ import Image from 'next/image'
 import { Github, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react'
 
 const certificates = [
-  { name: 'React Developer Certification', issuer: 'React Training', year: 2023, image: '/placeholder.svg?height=150&width=200' },
-  { name: 'Advanced JavaScript', issuer: 'Udacity', year: 2022, image: '/placeholder.svg?height=150&width=200' },
-  { name: 'UI/UX Design Fundamentals', issuer: 'Interaction Design Foundation', year: 2022, image: '/placeholder.svg?height=150&width=200' },
-  { name: 'Full Stack Web Development', issuer: 'FreeCodeCamp', year: 2021, image: '/placeholder.svg?height=150&width=200' },
+  { name: 'Mastering Mobile Programming Android', issuer: 'Skill Academy', skill: 'Java', image: '/images/sertifikat-programming-android-java.jpg?height=350&width=400' },
+  { name: 'Advanced JavaScript', issuer: 'Udacity', skill: 'JavaScript', image: '/placeholder.svg?height=150&width=200' },
+  { name: 'User Interface Fundametals', issuer: 'Hacktiv8', skill: 'UI/UX', image: '/images/sertifikat-ui-ux-design-frontend.jpg' },
+  { name: 'Full Stack Web Development', issuer: 'FreeCodeCamp', skill: 'Web Dev', image: '/placeholder.svg?height=150&width=200' },
 ]
 
 const socialLinks = [
@@ -23,9 +23,7 @@ export default function AboutSection() {
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cGF0dGVybiBpZD0iZ3JpZCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiPjxwYXRoIGQ9Ik0gMTAwIDAgTCAwIDAgMCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzk3YzJmZiIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAyNSAwIEwgMjUgMTAwIE0gNTAgMCBMIDUwIDEwMCBNIDc1IDAgTCA3NSAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2UyZWVmZiIgc3Ryb2tlLXdpZHRoPSIxIi8+PHBhdGggZD0iTSAwIDI1IEwgMTAwIDI1IE0gMCA1MCBMIDM1IDUwIE0gMCA3NSBMIDM1IDc1IiBmaWxsPSJub25lIiBzdHJva2U9IiNlMmVlZmYiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-20"></div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div 
-          className="max-w-3xl mx-auto text-center mb-16"
-        >
+        <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-3xl font-bold mb-4 text-gray-900">Tentang</h2>
           <p className="text-xl text-gray-600 mb-8">
             I'm a passionate UI developer with a focus on creating accessible and performant web applications. 
@@ -45,8 +43,10 @@ export default function AboutSection() {
                 <Image src={cert.image} alt={cert.name} width={200} height={150} className="w-full h-40 object-cover" />
                 <div className="p-4">
                   <h4 className="font-semibold text-lg mb-2 text-gray-900">{cert.name}</h4>
-                  <p className="text-sm text-gray-600">{cert.issuer}</p>
-                  <p className="text-sm text-gray-500">{cert.year}</p>
+                  <p className="text-sm text-gray-600 mb-2">{cert.issuer}</p>
+                  <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                    {cert.skill}
+                  </span>
                 </div>
               </div>
             ))}
