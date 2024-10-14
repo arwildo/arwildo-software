@@ -1,4 +1,3 @@
-import Header from './components/header'
 import LandingPage from './components/landing-page'
 import Customer from './components/customer'
 import About from './components/about'
@@ -11,7 +10,6 @@ export const metadata = {
 export default function Home() {
   return (
     <main>
-      <Header />
       <LandingPage />
       <Customer />
       <About />
