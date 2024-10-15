@@ -2,10 +2,10 @@ import Image from 'next/image'
 import { Github, Linkedin, Twitter, Facebook, Instagram } from 'lucide-react'
 
 const certificates = [
-  { name: 'Mastering Mobile Programming Android', issuer: 'Skill Academy', skill: 'Java', image: '/images/sertifikat-programming-android-java.jpg?height=350&width=400' },
-  { name: 'Advanced JavaScript', issuer: 'Udacity', skill: 'JavaScript', image: '/placeholder.svg?height=150&width=200' },
-  { name: 'User Interface Fundametals', issuer: 'Hacktiv8', skill: 'UI/UX', image: '/images/sertifikat-ui-ux-design-frontend.jpg' },
-  { name: 'Full Stack Web Development', issuer: 'FreeCodeCamp', skill: 'Web Dev', image: '/placeholder.svg?height=150&width=200' },
+  { name: 'Mastering Mobile Programming Android', issuer: 'Skill Academy', image: '/images/sertifikat-programming-android-java.jpg?height=350&width=400' },
+  { name: 'Alibaba Cloud Certified Associate', issuer: 'Alibaba', image: '/images/Alibaba-Cloud-Certified-Associate.png' },
+  { name: 'Java Coding Bootcamp', issuer: 'YASKI', image: '/images/sertifikat-coding-programming-java-khanza-yaski-hospital-simrs.jpg' },
+  { name: 'User Interface Fundametals', issuer: 'Hacktiv8', image: '/images/sertifikat-ui-ux-design-frontend.jpg' },
 ]
 
 const socialLinks = [
@@ -24,29 +24,27 @@ export default function AboutSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl font-bold mb-4 text-gray-900">Tentang</h2>
-          <p className="text-xl text-gray-600 mb-8">
-            I'm a passionate UI developer with a focus on creating accessible and performant web applications. 
-            With years of experience in React and modern web technologies, I strive to build intuitive and 
-            beautiful user interfaces that make a difference.
+          <div className="w-32 h-32 rounded-full border-2 border-gray-900 overflow-hidden mx-auto mb-2">
+            <Image src="/images/arwildo.jpeg" alt="Arwildo" width={150} height={150} className="object-cover" />
+          </div>
+          <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">About</h2>
+          <p className="text-lg text-gray-600 mb-8">
+            I am a software engineer with 6 years of professional experience in developing software solutions for businesses, clinics, schools, hospitals, and other institutions.
+            My work spans across various industries, applying innovative programming practices to deliver tailored, efficient, and scalable applications.
           </p>
         </div>
 
         <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8 text-center text-gray-900">Certifications</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 px-4 md:px-8 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {certificates.map((cert) => (
               <div 
                 key={cert.name}
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
-                <Image src={cert.image} alt={cert.name} width={200} height={150} className="w-full h-40 object-cover" />
+                <Image src={cert.image} alt={cert.name} width={300} height={250} className="w-full h-30 object-cover" />
                 <div className="p-4">
-                  <h4 className="font-semibold text-lg mb-2 text-gray-900">{cert.name}</h4>
-                  <p className="text-sm text-gray-600 mb-2">{cert.issuer}</p>
-                  <span className="inline-block bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
-                    {cert.skill}
-                  </span>
+                  <h4 className="font-semibold text-sm mb-2 text-gray-900">{cert.name}</h4>
+                  <p className="text-xs text-gray-600 mb-2">{cert.issuer}</p>
                 </div>
               </div>
             ))}
