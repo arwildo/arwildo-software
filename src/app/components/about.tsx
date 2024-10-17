@@ -51,7 +51,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <footer className="border-t border-gray-200 pt-8">
+        <footer className="pt-8">
           <div className="flex flex-wrap justify-center items-center gap-6">
             {socialLinks.map((link) => (
               <a 
@@ -67,7 +67,7 @@ export default function AboutSection() {
             ))}
           </div>
           <div className="text-center mt-8 text-gray-500">
-            <p>&copy; 2024 Arwildo. All rights reserved.</p>
+            <p>&copy; 2024 Arwildo</p>
           </div>
         </footer>
       </div>
