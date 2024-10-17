@@ -1,4 +1,5 @@
 import LandingPage from './components/landing-page'
+import ProductsSection from './components/products-section';
 import Customer from './components/customer'
 import About from './components/about'
 
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <main>
       <LandingPage />
+      <ProductsSection />
       <Customer />
       <About />
     </main>

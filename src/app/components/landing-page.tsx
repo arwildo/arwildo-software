@@ -1,7 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import ProductsSection from './products-section';
 import Link from 'next/link';
 
 export default function LandingPage() {
@@ -58,9 +57,13 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-      </div>
 
-      <ProductsSection />
+        {/* Blinking Scroll Indicator */}
+        <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
+          <div className="w-1 h-7 bg-gray-500 animate-bounce rounded-full"></div>
+        </div>
+
+      </div>
     </div>
   );
 }

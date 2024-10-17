@@ -36,15 +36,15 @@ const CustomerLogo = ({ name, logo, size }: { name: string; logo: string; size: 
 
 export default function CustomerSection() {
   return (
-    <section className="bg-white py-16 relative">
+    <section className="bg-white py-32 relative">
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-2xl font-bold text-center mb-12 text-gray-900">Clients</h2>
-        <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-6 mb-8">
+        <div className="flex flex-wrap justify-center items-center gap-x-32 gap-y-12 mb-8">
           {customers.slice(0, 4).map((customer) => (
             <CustomerLogo key={customer.name} {...customer} size={60} />
           ))}
         </div>
-        <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4">
+        <div className="flex flex-wrap justify-center items-center gap-x-24 gap-y-4">
           {customers.slice(4, 8).map((customer) => (
             <CustomerLogo key={customer.name} {...customer} size={40} />
           ))}
