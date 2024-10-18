@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import { motion } from 'framer-motion';
 
 const customers = [
   { name: 'Bunda Pengharapan Hospital', logo: '/images/clients/bunda-pengharapan-hospital.png' },
@@ -40,8 +41,15 @@ export default function CustomerSection() {
       <div className="container mx-auto px-4 py-10 relative z-10">
         <h2 className="text-2xl font-bold text-center mb-12 text-gray-900">Clients</h2>
         <div className="flex flex-wrap justify-center items-center gap-x-8 md:gap-x-16 gap-y-12 mb-8">
-          {customers.slice(0, 8).map((customer) => (
-            <CustomerLogo key={customer.name} {...customer} size={180} />
+          {customers.slice(0, 8).map((customer, index) => (
+            <motion.div
+              key={customer.name}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.4 }} // Delay for each customer logo
+            >
+              <CustomerLogo {...customer} size={180} />
+            </motion.div>
           ))}
         </div>
       </div>
