@@ -50,6 +50,13 @@ export default function LandingPage() {
                 <h1 className="text-5xl md:text-7xl font-black text-carcoal">
                   <a href="/contact">Arwildo</a>
                 </h1>
+              </motion.div>
+              <motion.div 
+                className="text-center md:text-left"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.3 }}
+              >
                 <p className="text-md text-gray-600 font-normal tracking-widest">
                   <a href="/contact">SOFTWARE</a>
                 </p>
@@ -60,7 +67,7 @@ export default function LandingPage() {
 
         {/* Blinking Scroll Indicator */}
         <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2">
-          <div className="w-1 h-7 bg-carcoal animate-bounce rounded-full"></div>
+          <div className="w-0.5 h-7 bg-blue-300 animate-bounce rounded-full"></div>
         </div>
 
       </div>

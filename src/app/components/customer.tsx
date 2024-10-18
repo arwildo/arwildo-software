@@ -4,13 +4,13 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 const customers = [
-  { name: 'Bunda Pengharapan Hospital', logo: '/images/clients/bunda-pengharapan-hopital.png' },
+  { name: 'Bunda Pengharapan Hospital', logo: '/images/clients/bunda-pengharapan-hospital.png' },
   { name: 'Harmoni Clinic', logo: '/images/clients/harmoni-clinic.png' },
   { name: 'Heart & Surgery Hospital', logo: '/images/clients/heart-surgery-hospital.png' },
   { name: 'Santa Lusia Clinic', logo: '/images/clients/santa-lusia-clinic.png' },
   { name: 'Santa Elisabeth Pharmacy', logo: '/images/clients/santa-elisabeth-pharmacy.png' },
   { name: 'Doctor Adolf Practice\'s', logo: '/images/clients/doctor-adolf-practice.png' },
-  { name: 'Mitra Keluarga Clinic', logo: '/images/clients/mitra-clinic.png' },
+  { name: 'Mitra Keluarga Clinic', logo: '/images/clients/mitra-keluarga-clinic.png' },
   { name: 'Other Hospital and Clinic', logo: '/images/clients/other-hospital-clinic.png' },
 ]
 
@@ -36,17 +36,12 @@ const CustomerLogo = ({ name, logo, size }: { name: string; logo: string; size: 
 
 export default function CustomerSection() {
   return (
-    <section className="bg-white py-32 relative">
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="bg-white py-8 md:py-16 relative">
+      <div className="container mx-auto px-4 py-10 relative z-10">
         <h2 className="text-2xl font-bold text-center mb-12 text-gray-900">Clients</h2>
-        <div className="flex flex-wrap justify-center items-center gap-x-32 gap-y-12 mb-8">
-          {customers.slice(0, 4).map((customer) => (
-            <CustomerLogo key={customer.name} {...customer} size={60} />
-          ))}
-        </div>
-        <div className="flex flex-wrap justify-center items-center gap-x-24 gap-y-4">
-          {customers.slice(4, 8).map((customer) => (
-            <CustomerLogo key={customer.name} {...customer} size={40} />
+        <div className="flex flex-wrap justify-center items-center gap-x-8 md:gap-x-16 gap-y-12 mb-8">
+          {customers.slice(0, 8).map((customer) => (
+            <CustomerLogo key={customer.name} {...customer} size={180} />
           ))}
         </div>
       </div>

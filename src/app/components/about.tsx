@@ -28,14 +28,14 @@ export default function AboutSection() {
             <Image src="/images/arwildo.jpeg" alt="Arwildo" width={150} height={150} className="object-cover" />
           </div>
           <h2 className="text-2xl font-bold text-center mb-8 text-gray-900">About</h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-md text-gray-600 mb-8 px-4 md:px-8 text-justify">
             I am a software engineer with 6 years of professional experience in developing software solutions for businesses, clinics, schools, hospitals, and other institutions.
             My work spans across various industries, applying innovative programming practices to deliver tailored, efficient, and scalable applications.
           </p>
         </div>
 
         <div className="mb-16">
-          <div className="grid grid-cols-1 px-4 md:px-8 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 px-4 md:px-8 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {certificates.map((cert) => (
               <div 
                 key={cert.name}

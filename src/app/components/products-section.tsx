@@ -60,7 +60,7 @@ function ProductCard({ product }: { product: Product }) {
   }, [emblaApi, onSelect])
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300 ease-in-out h-full border border-gray-200">
+    <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 ease-in-out h-full border border-gray-200">
       <div className="relative">
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
